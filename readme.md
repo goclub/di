@@ -38,4 +38,7 @@ type Dog struct {
     Cat func() ICat.Interface
 }
 ```
+
+[代码实现](./internal/dep/main.go)
+
 突破了 go 的限制,一辈子在一起❤️🎉🎉🎉❤️
