@@ -29,3 +29,19 @@ func main() {
 	log.Println("dog.Wang()", dog.Wang())         // wang!
 	log.Println("dog.Favorite()", dog.Favorite()) // cat:meow~
 }
+
+/*
+猫和狗互相依赖, 猫会发嗲 `cat.Meow()`,狗会发财 `dog.Wang()`
+
+猫的最爱是狗叫 `cat.Favorite()`  它内部调用了 `dog.Wang()`
+
+狗的最爱是猫叫 `dog.Favorite()`  它内部调用了 `cat.Meow()`
+
+猫狗事实上循环依赖了
+
+但是 `go` 不允许循环依赖, **go比狗还狗**
+
+猫狗利用*接口*描述了各自的*功能*
+
+突破了 go 的限制,一辈子在一起❤️🎉🎉🎉❤️
+*/
