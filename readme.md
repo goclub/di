@@ -17,28 +17,6 @@
 
 猫狗利用*接口*描述了各自的*功能*
 
-```go
-// ICat.Interface
-// 猫叫和最爱
-type Interface interface {
-    Meow() string
-    Favorite() string
-}
-// IDog.Interface
-// 狗叫和最爱
-type Interface interface {
-    Wang() string
-    Favorite() string
-}
-// 并在内部功能调各自的接口
-type Cat struct {
-    Dog func() IDog.Interface
-}
-type Dog struct {
-    Cat func() ICat.Interface
-}
-```
+突破了 go 的限制,一辈子在一起❤️🎉🎉🎉❤️
 
 [代码实现](./internal/dep/main.go)
-
-突破了 go 的限制,一辈子在一起❤️🎉🎉🎉❤️
